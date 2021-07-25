@@ -4,15 +4,19 @@
   --color-sidebar-background: #f2ede9;
 }
 */
-li {
-  list-style: none;
-}
+$colorA: #4D4D4D;
 $pc: 1024px; // PC
 $tab: 834px; // タブレット
 $sp: 375px; // スマホ
-
+html,body{
+  font-family: 'Noto Serif KR', serif;
+}
+li {
+  list-style: none;
+}
 a{
   text-decoration: none;
+  color: $colorA;
 }
 @mixin pc {
   @media (max-width: ($pc)) {

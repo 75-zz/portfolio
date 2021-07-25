@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     padding: 50px 0;
+    color: $colorA;
 }
 .p-logo{
     position: relative;
@@ -15,10 +16,4 @@
     content:"WEB DESIGN\ANAGOMI CREATE";
     white-space: pre;
     font-size: 12px;
-}
-.p-gnav ul{
-    display: flex;
-    justify-content: space-between;
-    font-size: 2px;
-    width: 500px;
 }
