@@ -18,6 +18,20 @@
   },
   "homepage": "https://github.com/75-zz/portfolio#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "css-mqpacker": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-progeny": "^0.4.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^3.0.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.4",
+    "css-declaration-sorter": "^6.1.1",
+    "gulp-notify": "^4.0.0",
+    "gulp-postcss": "^9.0.0",
+    "sass": "^1.36.0"
   }
 }
