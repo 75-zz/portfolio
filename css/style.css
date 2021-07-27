@@ -316,6 +316,10 @@ html, body {
   font-family: "Noto Serif KR", serif;
 }
 
+p {
+  font-family: "Sawarabi Mincho";
+}
+
 li {
   list-style: none;
 }
@@ -447,10 +451,14 @@ a {
 }
 
 .p-philosophy {
-  background: url(../../../img/philo-bg.png) top center/cover no-repeat;
+  background: url(../../../img/philo-bg.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: row-reverse;
-  height: 557px;
+  height: 100vh;
   justify-content: space-between;
   width: 100vw;
 }
@@ -460,6 +468,7 @@ a {
   line-height: 250%;
   padding-left: 220px;
   text-align: center;
+  vertical-align: middle;
 }
 .p-philosophy .p-philo-title {
   align-self: center;
@@ -471,7 +480,7 @@ a {
   content: "";
   height: 2px;
   position: absolute;
-  right: 0px;
+  right: 0 px;
   top: 120px;
   width: 100%;
 }
