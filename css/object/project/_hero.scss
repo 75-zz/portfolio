@@ -2,25 +2,40 @@
 .p-hero {
     text-align: center;
     width: 50%;
-    height: 100vh;
+    height: 80vh;
+    position: relative;
 }
-.p-hero-name{
+.p-hero-name {
     font-size: 61px;
     margin: 144px;
     position: relative;
     margin-bottom: 80px;
 }
-.p-hero-name::after{
+.p-hero-name::after {
     position: absolute;
-    top:190px;
+    top: 190px;
     left: 36px;
     content: "";
     width: 595px;
     height: 5px;
     border-radius: 5px;
-    background: rgb(255,130,130);
-background: linear-gradient(90deg, rgba(255,130,130,1) 0%, rgba(81,203,255,1) 35%, rgba(96,70,255,1) 100%);
+    background: linear-gradient(90deg, rgba(255, 130, 130, 1) 0%, rgba(81, 203, 255, 1) 35%, rgba(96, 70, 255, 1) 100%);
+    background-size: 200% 200%;
+    animation: bggradient 10s ease infinite;
 }
+
+@keyframes bggradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .p-sub-upper {
     display: block;
     font-size: 36px;
@@ -34,4 +49,172 @@ background: linear-gradient(90deg, rgba(255,130,130,1) 0%, rgba(81,203,255,1) 35
 
 .p-site-description {
     font-size: 20px;
+}
+.container {
+    position: absolute;
+    height: 1000px;
+    right: -105px;
+    top: -205px;
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+.circle--1 {
+    position: absolute;
+    left: 320px;
+    top: 230px;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(280deg, rgba(255, 95, 95, 0.3), rgba(253, 174, 81, 0.3));
+    border-radius: 50%;
+    animation: wobbling-c_x 2s ease-in-out infinite alternate, wobbling-c_y 3s ease-in-out infinite alternate;
+}
+
+.circle--2 {
+    position: absolute;
+    left: 326px;
+    top: 235px;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(280deg, rgba(255, 95, 95, 0.3), rgba(253, 174, 81, 0.3));
+    border-radius: 50%;
+    animation: wobbling-c_x 3s ease-in-out infinite alternate, wobbling-c_y 4s ease-in-out infinite alternate;
+}
+
+.box--1 {
+    position: absolute;
+    left: 137px;
+    top: 5px;
+    width: 220px;
+    height: 220px;
+    background: linear-gradient(280deg, rgba(17, 181, 3, 0.9), rgba(189, 248, 184, 1));
+    animation: wobbling-b_x 3s ease-in-out infinite alternate, wobbling-b_y 4s ease-in-out infinite alternate;
+}
+
+.box--2 {
+    position: absolute;
+    left: 132px;
+    top: -2px;
+    width: 220px;
+    height: 220px;
+    background: linear-gradient(280deg, rgba(17, 181, 3, 0.3), rgba(189, 248, 184, 0.3));
+    animation: wobbling-b_x 2s ease-in-out infinite alternate, wobbling-b_y 3s ease-in-out infinite alternate;
+}
+
+.hex--1 {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    left: 500px;
+    top: 20px;
+    clip-path: polygon(50% 0, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    background: linear-gradient(280deg, rgba(255, 213, 130, 0.3), rgba(255, 221, 45, 0.3));
+    animation: wobbling-h_x 2s ease-in-out infinite alternate, wobbling-h_y 3s ease-in-out infinite alternate;
+}
+
+.hex--2 {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    left: 503px;
+    top: 17px;
+    clip-path: polygon(50% 0, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    background: linear-gradient(280deg, rgba(255, 213, 130, 0.3), rgba(255, 221, 45, 0.3));
+    animation: wobbling-h_x 3s ease-in-out infinite alternate, wobbling-h_y 4s ease-in-out infinite alternate;
+}
+
+.tri--1 {
+    position: absolute;
+    width: 140px;
+    height: 120px;
+    left: 380px;
+    top: 90px;
+    transform: rotate(15deg);
+    transition: transform 0.4s ease;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: linear-gradient(280deg, rgba(71, 112, 255, 0.3), rgba(153, 200, 255, 0.3));
+    animation: wobbling-h_x 2s ease-in-out infinite alternate, wobbling-h_y 3s ease-in-out infinite alternate;
+}
+
+.tri--2 {
+    position: absolute;
+    width: 140px;
+    height: 120px;
+    left: 383px;
+    top: 93px;
+    transform: rotate(15deg);
+    transition: transform 0.4s ease;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: linear-gradient(280deg, rgba(71, 112, 255, 0.3), rgba(153, 200, 255, 0.3));
+    animation: wobbling-h_x 3s ease-in-out infinite alternate, wobbling-h_y 44s ease-in-out infinite alternate;
+}
+
+.tri--2:hover {
+    transform: rotate(100deg);
+}
+
+@keyframes wobbling-c_x {
+    0% {
+        margin-left: 9px;
+        transform: scale(1);
+    }
+
+    100% {
+        margin-left: 0px;
+        transform: scale(0.9);
+    }
+}
+
+@keyframes wobbling-c_y {
+    0% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: 13px;
+    }
+}
+
+@keyframes wobbling-b_x {
+    0% {
+        margin-left: 5px;
+        transform: scale(0.9) rotate(30deg);
+    }
+
+    100% {
+        margin-left: 10px;
+        transform: scale(1) rotate(27deg);
+    }
+}
+
+@keyframes wobbling-b_y {
+    0% {
+        margin-top: 2px;
+    }
+
+    100% {
+        margin-top: 12px;
+    }
+}
+
+@keyframes wobbling-h_x {
+    0% {
+        margin-left: 10px;
+        transform: scale(1) rotate(2deg);
+    }
+
+    100% {
+        margin-left: 19px;
+        transform: scale(0.9) rotate(6deg);
+    }
+}
+
+@keyframes wobbling-h_y {
+    0% {
+        margin-top: 19px;
+    }
+
+    100% {
+        margin-top: 12px;
+    }
 }

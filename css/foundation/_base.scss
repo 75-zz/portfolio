@@ -4,7 +4,8 @@
   --color-sidebar-background: #f2ede9;
 }
 */
-$colorA: #4D4D4D;
+$gray: #4D4D4D;
+$lightgray: #868686;
 $pc: 1024px; // PC
 $tab: 834px; // タブレット
 $sp: 375px; // スマホ
@@ -19,7 +20,7 @@ li {
 }
 a{
   text-decoration: none;
-  color: $colorA;
+  color: $gray;
 }
 @mixin pc {
   @media (max-width: ($pc)) {
