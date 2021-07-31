@@ -2,5 +2,21 @@
 .c-about-fig{
     width: 130px;
     height: 380px;
-    margin: 30px 50px;
+    margin: 50px;
+    img{
+        height: 180px;
+        width: 130px;
+        object-fit: contain;
+    }
+    .fig-title{
+        font-size: 28px;
+        text-align: center;
+        font-weight: bold;
+        margin: 5px 0;
+    }
+    .about-direction{
+        font-size: 12px;
+        line-height: 170%;
+        width: 130px;
+    }
 }

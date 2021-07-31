@@ -8,53 +8,66 @@
     overflow: hidden;
     transform: translate3d(0, 0, 0);
   }
-  
+  .wv-box2 {
+    width: 100vw;
+    padding:50px;
+    margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
   .inner-content{
     background-color:#f0f0f0;
     display:block;
     margin:0 auto;
+    padding-bottom:80px;
   }
   .wave {
     position: absolute;
-    top: 1150%;
-    left: 30%;
+    top: 1360%;
+    left: -50%;
     background: #f0f0f0;
-    width: 2800px;
-    height: 2800px;
+    width: 6000px;
+    height: 6000px;
     margin-left: -50%;
     margin-top: -50%;
     transform-origin: 50% 48%;
     border-radius: 43%;
-    animation: drift 3000ms infinite linear;
+    animation: drift 2500ms infinite linear;
    &.-three {
+    left: -45%;
         animation: drift 5000ms infinite linear;
         background-color: #f0f0f0;
       }
       
     &.-two {
+      left: -55%;
         animation: drift 6000ms infinite linear;
         background-color: #f0f0f0;
       }
   }
   .wave2 {
     position: absolute;
-    top: -1800%;
-    left: 30%;
+    top: -3028%;
+    left: -10%;
     background: #f0f0f0;
-    width: 2800px;
-    height: 2800px;
+    width: 4000px;
+    height: 4000px;
     margin-left: -50%;
     margin-top: -50%;
     transform-origin: 50% 48%;
     border-radius: 43%;
-    animation: drift 3000ms infinite linear;
+    animation: drift 2400ms infinite linear;
     &.-three {
-        animation: drift 5000ms infinite linear;
+      top: -3030%;
+      left: 5%;
+        animation: drift 4900ms infinite linear;
         background-color: #f0f0f0;
       }
       
     &.-two {
-        animation: drift 6000ms infinite linear;
+      left: 0%;
+        animation: drift 6100ms infinite linear;
         background-color: #f0f0f0;
       }
   }
