@@ -1,0 +1,60 @@
+@charset "UTF-8";
+.p-footer {
+    text-align: center;
+    color: #fff;
+    background-color: $gray;
+    display: flex;
+    flex-direction: column;
+    .p-ft-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 120px;
+        .item--l{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            .textarea{
+                display: flex;
+                font-size: 24px;
+                text-align: center;
+                justify-content: space-around;
+                min-width: 600px;
+                margin: 180px;
+                .title{
+                    margin-top: 20px;
+                }
+                .name{
+                    font-size: 36px;
+                    position: relative;
+                }
+                .name::after{
+                    content: "Kikuchi Nagomi";
+                    font-size: 18px;
+                    position: absolute;
+                    top:50px;
+                    left: 0px;
+                    letter-spacing: 0.2rem;
+                }
+            }
+            button{
+                padding: 12px;
+                background-color: #000;
+                width: 300px;
+                margin: 0 auto;
+                transition: all 0.3s;
+            }
+            button:hover{
+               opacity: .5;
+            }
+        }
+        .item--r{
+            width: 30%;
+        }
+    }
+    .p-ft-small{
+        font-size: 14px;
+        width: 100%;
+        padding: 10px 0;
+    }
+}

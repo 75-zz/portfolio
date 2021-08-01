@@ -1,26 +1,25 @@
 @charset "UTF-8";
-.p-wv-wrapper{
-
+.p-wv-wrapper {
   .wv-box {
     width: 100vw;
-    padding:50px;
+    padding: 50px;
     position: relative;
     overflow: hidden;
     transform: translate3d(0, 0, 0);
   }
   .wv-box2 {
     width: 100vw;
-    padding:50px;
+    padding: 50px;
     margin-bottom: 100px;
     position: relative;
     overflow: hidden;
     transform: translate3d(0, 0, 0);
   }
-  .inner-content{
-    background-color:#f0f0f0;
-    display:block;
-    margin:0 auto;
-    padding-bottom:80px;
+  .inner-content {
+    background-color: #f0f0f0;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 80px;
   }
   .wave {
     position: absolute;
@@ -34,21 +33,31 @@
     transform-origin: 50% 48%;
     border-radius: 43%;
     animation: drift 2500ms infinite linear;
-   &.-three {
-    left: -45%;
-        animation: drift 5000ms infinite linear;
-        background-color: #f0f0f0;
-      }
-      
+    &.-three {
+      left: -45%;
+      animation: drift 4000ms infinite linear;
+      background-color: #f0f0f0;
+    }
+
     &.-two {
-      left: -55%;
-        animation: drift 6000ms infinite linear;
-        background-color: #f0f0f0;
-      }
+      left: -65%;
+      animation: drift 5000ms infinite linear;
+      background-color: #f0f0f0;
+    }
+    &.-four {
+      left: -75%;
+      animation: drift 2000ms infinite linear;
+      background-color: #f0f0f0;
+    }
+    &.-five {
+      left: -25%;
+      animation: drift 3500ms infinite linear;
+      background-color: #f0f0f0;
+    }
   }
   .wave2 {
     position: absolute;
-    top: -3028%;
+    top: -3035%;
     left: -10%;
     background: #f0f0f0;
     width: 4000px;
@@ -60,22 +69,39 @@
     animation: drift 2400ms infinite linear;
     &.-three {
       top: -3030%;
-      left: 5%;
-        animation: drift 4900ms infinite linear;
-        background-color: #f0f0f0;
-      }
-      
+      left: 7%;
+      animation: drift 4900ms infinite linear;
+      background-color: #f0f0f0;
+    }
+
     &.-two {
-      left: 0%;
-        animation: drift 6100ms infinite linear;
-        background-color: #f0f0f0;
-      }
+      left: -2%;
+      animation: drift 6100ms infinite linear;
+      background-color: #f0f0f0;
+    }
+    &.-four {
+      top: -3030%;
+      left: 27%;
+      animation: drift 3900ms infinite linear;
+      background-color: #f0f0f0;
+    }
+
+    &.-five {
+      top: -3030%;
+      left: -20%;
+      animation: drift 3200ms infinite linear;
+      background-color: #f0f0f0;
+    }
+
+
   }
 
-  
-  
   @keyframes drift {
-    from { transform: rotate(0deg); }
-    from { transform: rotate(360deg); }
+    from {
+      transform: rotate(0deg);
+    }
+    from {
+      transform: rotate(360deg);
+    }
   }
 }

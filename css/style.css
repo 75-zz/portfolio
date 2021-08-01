@@ -332,6 +332,11 @@ a {
 /** 
 * Layout
 * ========================== */
+.l-footer {
+  background-color: #000;
+  width: 100%;
+}
+
 .l-header {
   background-color: rgba(255, 255, 255, 0.5);
   height: 177px;
@@ -447,6 +452,83 @@ a {
   margin: 0 auto;
   padding: 0 200px;
   width: 80%;
+}
+
+.p-contact {
+  display: flex;
+  margin: 0 auto 150px;
+  width: 100vw;
+}
+.p-contact button {
+  background-color: #4D4D4D;
+  color: #fff;
+  margin: 0 auto;
+  padding: 10px;
+  transition: all 0.3s;
+  width: 300px;
+}
+.p-contact button:hover {
+  opacity: 0.5;
+}
+
+.p-footer {
+  background-color: #4D4D4D;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.p-footer .p-ft-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 120px;
+}
+.p-footer .p-ft-wrapper .item--l {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.p-footer .p-ft-wrapper .item--l .textarea {
+  display: flex;
+  font-size: 24px;
+  justify-content: space-around;
+  margin: 180px;
+  min-width: 600px;
+  text-align: center;
+}
+.p-footer .p-ft-wrapper .item--l .textarea .title {
+  margin-top: 20px;
+}
+.p-footer .p-ft-wrapper .item--l .textarea .name {
+  font-size: 36px;
+  position: relative;
+}
+.p-footer .p-ft-wrapper .item--l .textarea .name::after {
+  content: "Kikuchi Nagomi";
+  font-size: 18px;
+  left: 0px;
+  letter-spacing: 0.2rem;
+  position: absolute;
+  top: 50px;
+}
+.p-footer .p-ft-wrapper .item--l button {
+  background-color: #000;
+  margin: 0 auto;
+  padding: 12px;
+  transition: all 0.3s;
+  width: 300px;
+}
+.p-footer .p-ft-wrapper .item--l button:hover {
+  opacity: 0.5;
+}
+.p-footer .p-ft-wrapper .item--r {
+  width: 30%;
+}
+.p-footer .p-ft-small {
+  font-size: 14px;
+  padding: 10px 0;
+  width: 100%;
 }
 
 .p-header {
@@ -820,6 +902,59 @@ a {
   width: 100%;
 }
 
+.p-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 200px 0 50px;
+  width: 100vw;
+}
+.p-product .p-product-title {
+  align-self: center;
+  color: #4D4D4D;
+  padding-left: 220px;
+}
+.p-product .p-product-title::after {
+  background-color: #4D4D4D;
+  content: "";
+  height: 2px;
+  position: absolute;
+  right: 0;
+  top: 120px;
+  width: 100%;
+}
+.p-product table {
+  border: 1px #4D4D4D solid;
+  border-collapse: collapse;
+  margin: 100px auto;
+  text-align: center;
+  width: 1156px;
+}
+.p-product table caption {
+  background-color: #4d4d4d;
+  color: #fff;
+  font-size: 36px;
+  padding: 50px 0;
+}
+.p-product table tr {
+  border-bottom: 1px #4D4D4D solid;
+}
+.p-product table tr td {
+  padding: 50px 0;
+}
+.p-product table tr td:first-child {
+  border-right: 1px #4D4D4D dotted;
+  font-size: 30px;
+  min-width: 550px;
+}
+.p-product table tr td:last-child {
+  font-size: 20px;
+  min-width: 400px;
+}
+.p-product table tr .bit {
+  font-size: 21px;
+}
+
 .p-results {
   display: flex;
   flex-direction: column;
@@ -885,16 +1020,28 @@ a {
   width: 6000px;
 }
 .p-wv-wrapper .wave.-three {
-  -webkit-animation: drift 5000ms infinite linear;
-          animation: drift 5000ms infinite linear;
+  -webkit-animation: drift 4000ms infinite linear;
+          animation: drift 4000ms infinite linear;
   background-color: #f0f0f0;
   left: -45%;
 }
 .p-wv-wrapper .wave.-two {
-  -webkit-animation: drift 6000ms infinite linear;
-          animation: drift 6000ms infinite linear;
+  -webkit-animation: drift 5000ms infinite linear;
+          animation: drift 5000ms infinite linear;
   background-color: #f0f0f0;
-  left: -55%;
+  left: -65%;
+}
+.p-wv-wrapper .wave.-four {
+  -webkit-animation: drift 2000ms infinite linear;
+          animation: drift 2000ms infinite linear;
+  background-color: #f0f0f0;
+  left: -75%;
+}
+.p-wv-wrapper .wave.-five {
+  -webkit-animation: drift 3500ms infinite linear;
+          animation: drift 3500ms infinite linear;
+  background-color: #f0f0f0;
+  left: -25%;
 }
 .p-wv-wrapper .wave2 {
   -webkit-animation: drift 2400ms infinite linear;
@@ -906,7 +1053,7 @@ a {
   margin-left: -50%;
   margin-top: -50%;
   position: absolute;
-  top: -3028%;
+  top: -3035%;
   transform-origin: 50% 48%;
   width: 4000px;
 }
@@ -914,14 +1061,28 @@ a {
   -webkit-animation: drift 4900ms infinite linear;
           animation: drift 4900ms infinite linear;
   background-color: #f0f0f0;
-  left: 5%;
+  left: 7%;
   top: -3030%;
 }
 .p-wv-wrapper .wave2.-two {
   -webkit-animation: drift 6100ms infinite linear;
           animation: drift 6100ms infinite linear;
   background-color: #f0f0f0;
-  left: 0%;
+  left: -2%;
+}
+.p-wv-wrapper .wave2.-four {
+  -webkit-animation: drift 3900ms infinite linear;
+          animation: drift 3900ms infinite linear;
+  background-color: #f0f0f0;
+  left: 27%;
+  top: -3030%;
+}
+.p-wv-wrapper .wave2.-five {
+  -webkit-animation: drift 3200ms infinite linear;
+          animation: drift 3200ms infinite linear;
+  background-color: #f0f0f0;
+  left: -20%;
+  top: -3030%;
 }
 @-webkit-keyframes drift {
   from {

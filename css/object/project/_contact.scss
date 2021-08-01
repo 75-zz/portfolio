@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.p-contact{
+    width: 100vw;
+    margin: 0 auto 150px;
+    display: flex;
+    button{
+        width: 300px;
+        padding: 10px;
+        background-color: $gray;
+        color: #fff;
+        margin: 0 auto;
+        transition: all 0.3s;
+    }
+    button:hover{
+       opacity: .5;
+    }
+}
