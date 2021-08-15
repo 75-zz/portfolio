@@ -1,19 +1,1 @@
 @charset "UTF-8";
-.p-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 0;
-    color: $gray;
-}
-.p-logo{
-    position: relative;
-    margin-left: 143px;
-}
-.p-logo::after{
-    position: absolute;
-    top:30px;
-    left: 100px;
-    content:"WEB DESIGN\ANAGOMI CREATE";
-    white-space: pre;
-    font-size: 12px;
-}

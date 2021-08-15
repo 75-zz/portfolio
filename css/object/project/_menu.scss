@@ -1,18 +1,1 @@
 @charset "UTF-8";
-.p-gnav{
-    display: flex;
-    ul{
-    display: flex;
-    justify-content: space-between;
-    width: 50vw;
-    font-size: 14px;
-    padding-right:140px;
-    align-self: center;
-        li a{
-        position: relative;
-    }
-    li a:hover{
-opacity: 0.5;
-    }
-}
-}

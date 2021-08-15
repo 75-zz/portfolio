@@ -9,235 +9,88 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <main class="p-main">
-        <header class="l-header p-header">
-            <h1 class="p-logo"><a href=""><img src="img/logo.png" alt="なごみクリエイトのロゴ"></a></h1>
-            <nav class="p-gnav">
-                <ul>
-                    <li><a href="">たいせつにしていること</a></li>
-                    <li><a href="">制作実績</a></li>
-                    <li><a href="">私のこと</a></li>
-                    <li><a href="">料金</a></li>
-                    <li><a href="">お問い合わせ</a></li>
-                </ul>
-            </nav>
+        <header class="l-header">
+            <div class="p-wrapper"><video class="p-hd_bg"></video></div>
+            <nav class="p-nav"></nav>
+            <h1 class="p-logo"></h1>
+            <h2 class="p-hd_title"></h2>
+            <div class="p-hd_results"></div>
         </header>
-        <section class="p-hero">
-            <div class="container">
-                <div class="circle--1"></div>
-                <div class="circle--2"></div>
-                <div class="box--1"></div>
-                <div class="box--2"></div>
-                <div class="hex--1"></div>
-                <div class="hex--2"></div>
-                <div class="tri--1"></div>
-                <div class="tri--2"></div>
+        <section class="l-about p-about">
+            <div class="p-ab_info">
+                <h3 class="c-sec_title">「作って終わり」のWebサイトにならないために</h3>
+                <p>業績が上がらず先が見えない。
+                    どうすれば苦境を乗り越えられるのかわからない。そんなお悩みはありませんか？
+                    弊社ではお客様に寄り添い、
+                    ともに売上拡大のための施策としての
+                    web制作を行います。
+                    さらに初心者にもわかりやすく、
+                    効果的なwebサイト作りを心がけています。
+                    「施策としてのweb」と「安心感」こそが
+                    弊社の強みです。</p>
             </div>
-            <h2 class="p-hero-name"><span class="p-sub-upper">抽出系 web design</span>NAGMOMI CREATE<span
-                    class="p-sub-under">なごみクリエイト</span></h2>
-            <p class="p-site-description">あなたのこだわり、このみ、つたえたいことを<br>
-                ていねいにひきだして<br>こころをこめてかたちにします。</p>
+            <figure class="p-ab_fig">
+                <img>
+                <figcaption class="p-ab_caption">
+                    <p>代表　菊地七五三</p>
+                </figcaption>
+                <button class="c-btn_readmore">Read more</button>
+            </figure>
         </section>
-        <section class="p-philosophy">
-            <h3 class="c-sec-title p-philo-title">Philosophy<span class="c-sec-sub">たいせつにしていること</span></h3>
-            <p>業績が上がらず先が見えない。<br>
-                どうすれば苦境を乗り越えられるのかわからない。<br>そんなお悩みはありませんか？<br>弊社ではお客様に寄り添い、<br>
-                ともに売上拡大のための施策としての
-                web制作を行います。<br>さらに初心者にもわかりやすく、<br>
-                効果的なwebサイト作りを心がけています。<br>
-                「施策としてのweb」と「安心感」こそが
-                弊社の強みです。</p>
+        <section class="l-solution p-solution">
+            <h3 class="c-sec_title">具体的にお手伝いできること</h3>
+            <article class="c-sl_card">
+                <h4>ヒアリング</h4><img>
+                <p>お客様のご希望を表現するためにヒアリ
+                    ングを重要視しています。コミュニケーション手段はメール・Slack
+                    ・Zoomなどを利用しています。</p>
+            </article>
+            <article class="c-sl_card">
+                <h4>デザイン</h4><img>
+                <p>ペルソナ設定・デザインシステム設計を
+                    しっかりと構築した上で無駄のないデザ
+                    インを心がけています。</p>
+            </article>
+            <article class="c-sl_card">
+                <h4>コーディング</h4><img>
+                <p>ユーザビリティを最優先に、構造を意識
+                    したHTMLとカスタマイズ性を考慮したCSS設計でコーディングしています。</p>
+            </article>
+            <article class="c-sl_card">
+                <h4>運営</h4><img>
+                <p>WordPressの使用方法を無料でレクチャ
+                    ー（Zoomで1時間程度）します。またセキュリティ面を考慮し、プラグイ
+                    ンの更新等を頻繁に行います。</p>
+            </article>
         </section>
-        <section class="p-results">
-            <div class="c-title-area">
-                <h3 class="c-sec-title p-results-title">Results<span class="c-sec-sub">制作実績</span></h3>
-            </div>
-            <div class="p-slide-area">
-                <figure class="c-card"><a href=""><img src="img/result-item1.png" alt="ハンバーガーサイトの画像"></a>
-                    <figcaption class="item-title">オリジナルWordPressテーマ</figcaption>
-                    <p class="item-descrption">RaiseTech最終課題
-                        デザインカンプを基に静的コーディング後WordPress化したのち、デバッグ・サーバーアップロード作業を行いました。Sassを使用し命名規則はFLOCSSに準拠しています。
-                        制作時間：一ヶ月
-                        使用アプリ：Adobe Xd、VScode、Local、Github</p>
-                </figure>
-                <figure class="c-card"><img src="img/result-item2.png" alt="三皇シーリングサイトの画像">
-                    <figcaption class="item-title">デザイン＋静的コーディング</figcaption>
-                    <p class="item-descrption">勤務先の自社サイトをリニューアル
-                        デザインから静的コーディング、サーバーアップロード作業を
-                        行いました。ブログ機能は外部WordPressとリンクさせ、カレンダー機能はJavaScript、メールフォームはCGIで実装しました。
-                        制作時間：二ヶ月
-                        使用アプリ：Adobe Illustrator、Photoshop、Dreamweaver</p>
-                </figure>
-                <figure class="c-card"><img src="img/result-item3.png" alt="RaiseTech旧サイトの画像">
-                    <figcaption class="item-title">模写コーディング</figcaption>
-                    <p class="item-descrption">RaiseTech課題
-                        公式サイトを基にHTML、CSS、JavaScript等で同様の動きや
-                        デザインを表現しました。
-                        制作時間：一ヶ月
-                        使用アプリ：VScode</p>
-                </figure>
-            </div>
-        </section>
-        <section class="p-about p-wv-wrapper">
-            <div class="wv-box">
-                <div class='wave -one'></div>
-                <div class='wave -two'></div>
-                <div class='wave -three'></div>
-                <div class='wave -four'></div>
-                <div class='wave -five'></div>
-            </div>
-            <div class="inner-content">
-                <div class="c-title-area-r">
-                    <h3 class="c-sec-title p-about-title">About<span class="c-sec-sub">私について</span></h3>
+        <sction class="l-results p-results">
+            <h3 class="c-sec_title">制作実績</h3>
+            <div class="p-rs_slider"></div>
+            <button class="c-btn_readmore">Read more</button>
+        </sction>
+        <section class="l-skills p-skills">
+            <h3 class="c-sec_title">技術面について</h3>
+            <div class="p-sk_wrapper">
+                <div class="p-sk_big">
+                    <table></table>
+                    <div class="c-sk_imgs"></div>
                 </div>
-                <div class="p-about-container">
-                    <figure class="c-about-fig">
-                        <img src="img/ab-html-logo.png">
-                        <figcaption class="fig-title">HTML</figcaption>
-                        <p class="about-descrption">HTML4の頃から慣れ親しんでいます。制作においては、常に構造を意識したコーディングを心がけています。</p>
-                    </figure>
-                    <figure class="c-about-fig">
-                        <img src="img/ab-css-logo.png">
-                        <figcaption class="fig-title">CSS</figcaption>
-                        <p class="about-descrption">誰が見ても分かりやすい記述を心がけています。命名規則はFLOCSS準拠です。</p>
-                    </figure>
-                    <figure class="c-about-fig">
-                        <img src="img/ab-sass-logo.png">
-                        <figcaption class="fig-title">Sass</figcaption>
-                        <p class="about-descrption">Gulpを使用しFLOCSSに対応したフォルダ構成で制作します。誰が見ても分かりやすく修正しやすい記述を心がけています。</p>
-                    </figure>
-                    <figure class="c-about-fig">
-                        <img src="img/ab-jquery-logo.png">
-                        <figcaption class="fig-title">jQuery</figcaption>
-                        <p class="about-descrption">アコーディオンメニュー、3層パララックス、カルーセル、ハンバーガーメニュー等、web制作での基本的な動きは問題なく実装できます。</p>
-                    </figure>
-                    <figure class="c-about-fig">
-                        <img src="img/ab-wp-logo.png">
-                        <figcaption class="fig-title">WordPress</figcaption>
-                        <p class="about-descrption">オリジナルテーマの制作経験があります。既存テーマのカスタマイズも可能です。</p>
-                    </figure>
-                    <figure class="c-about-fig">
-                        <img src="img/ab-figma-logo.png">
-                        <figcaption class="fig-title">Figma</figcaption>
-                        <p class="about-descrption">グラフィック、webデザインでの使用経験があります。最近の主力デザインアプリです。</p>
-                    </figure>
-                    <figure class="c-about-fig">
-                        <img src="img/ab-vscode-logo.png">
-                        <figcaption class="fig-title">VSCode</figcaption>
-                        <p class="about-descrption">最近のコーディングはほぼVScodeで行っています。GitHubと連携してバージョン管理も同時に行います。</p>
-                    </figure>
-                    <figure class="c-about-fig">
-                        <img src="img/ab-github-logo.png">
-                        <figcaption class="fig-title">Github</figcaption>
-                        <p class="about-descrption">web制作の進捗、バージョン管理等はGitHubを活用しています。</p>
-                    </figure>
-                    <figure class="c-about-fig">
-                        <img src="img/ab-ai-logo.png">
-                        <figcaption class="fig-title">Illustrator</figcaption>
-                        <p class="about-descrption">前職から通算13年ほど使用しています。バナーデザイン、パンフレット、ラベル、webデザイン等多岐の用途で使用できます。</p>
-                    </figure>
-                    <figure class="c-about-fig">
-                        <img src="img/ab-ps-logo.png">
-                        <figcaption class="fig-title">Photoshop</figcaption>
-                        <p class="about-descrption">こちらも13年ほど使用しています。写真加工、レタッチ、バナーデザイン、webデザイン等での使用経験があります。</p>
-                    </figure>
-                    <figure class="c-about-fig">
-                        <img src="img/ab-xd-logo.png">
-                        <figcaption class="fig-title">Xd</figcaption>
-                        <p class="about-descrption">半年ほどweb制作での使用経験があります。一通りの操作は問題ありません。</p>
-                    </figure>
-                    <figure class="c-about-fig">
-                        <img src="img/ab-dw-logo.png">
-                        <figcaption class="fig-title">Dreamweaver</figcaption>
-                        <p class="about-descrption">新規6サイト、リニューアル1サイトの制作経験があります。現在は主にVSCodeを使っていますがこちらも問題なく使用できます。</p>
-                    </figure>
+                <div class="p-sk_small">
+                    <table></table>
+                    <div class="c-sk_imgs"></div>
                 </div>
             </div>
-            <div class="wv-box2">
-                <div class='wave2 -one'></div>
-                <div class='wave2 -two'></div>
-                <div class='wave2 -three'></div>
-                <div class='wave2 -four'></div>
-                <div class='wave2 -five'></div>
-            </div>
         </section>
+        <section class="l-contact">
+            <h3 class="c-sec_title">お問い合わせ</h3>
+            <form></form>
         </section>
-        <section class="p-product">
-            <div class="c-title-area">
-                <h3 class="c-sec-title p-product-title">Product<span class="c-sec-sub">料金</span></h3>
-            </div>
-            <table>
-                <tr>
-                    <td>オリジナルデザイン</td>
-                    <td>トップページ 　22,000円（税込）～<br>下層ページ(1P)
-                        11,000円(税込)〜
-                    </td>
-                </tr>
-                <tr>
-                    <td>WordPressテーマ利用デザイン</td>
-                    <td>トップページ
-                        11,000円(税込)〜<br>
-                        下層ページ(1P)
-                        5,500円(税込)〜
-                    </td>
-                </tr>
-                <tr>
-                    <td>静的コーディング</td>
-                    <td>トップページ
-                        16,500円(税込)～<br>
-                        下層ページ(1P)
-                        8,250円(税込)〜
-                    </td>
-                </tr>
-                <tr>
-                    <td>レスポンシブ対応（スマホ）</td>
-                    <td>11,000円(税込)〜</td>
-                </tr>
-                <tr>
-                    <td>レスポンシブ対応<span class="bit">（タブレット・スマホ）</span></td>
-                    <td>15,000円(税込)〜</td>
-                </tr>
-                <tr>
-                    <td>jQuery実装</td>
-                    <td>11,000円(税込)〜</td>
-                </tr>
-                <tr>
-                    <td>Ratina対応</td>
-                    <td>11,000円(税込)〜</td>
-                </tr>
-            </table>
-            <table>
-                <caption>WordPressサイト制作</caption>
-                <tr>
-                    <td>WordPress基本料金<br><span class="bit">（サーバーへのWordPress構築等）</span></td>
-                    <td>　11,000円(税込)〜</td>
-                </tr>
-                <tr>
-                    <td>WordPress化</td>
-                    <td>33,000円(税込)〜</td>
-                </tr>
-            </table>
-        </section>
-        <section class="p-contact">
-            <button>お問い合わせはこちら</button>
-        </section>
-        <footer class="l-footer p-footer">
-            <div class="p-ft-wrapper">
-                <div class="item--l">
-                    <div class="textarea">
-                        <p class="title">Webデザイナー</p>
-                        <p class="name">菊地 七五三</p>
-                    </div><button>詳しい経歴はこちら</button>
-                </div>
-                <div class="item--r"><img src="img/myphoto.png" alt="菊地七五三の写真"></div>
-            </div>
-            <small class="p-ft-small">copyright : NAGOMI CREATE</small>
-        </footer>
+        <footer class="l-footer"><small>&copy; 2021 NAGOMI CREATE</small></footer>
     </main>
 </body>
 

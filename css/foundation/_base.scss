@@ -4,23 +4,19 @@
   --color-sidebar-background: #f2ede9;
 }
 */
-$gray: #4D4D4D;
-$lightgray: #868686;
+$primary: #003366;
+$secondary: #72a0c1;
 $pc: 1024px; // PC
 $tab: 834px; // タブレット
 $sp: 375px; // スマホ
 html,body{
-  font-family: 'Noto Serif KR', serif;
-}
-p{
-  font-family: "Sawarabi Mincho";
+  font-family: 'Cantarell', sans-serif;
 }
 li {
   list-style: none;
 }
 a{
   text-decoration: none;
-  color: $gray;
 }
 @mixin pc {
   @media (max-width: ($pc)) {
