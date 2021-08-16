@@ -1,0 +1,18 @@
+@charset "UTF-8";
+.c-sk_imgs {
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    .c-imgs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        img {
+            object-fit: contain;
+            margin: 15px;
+        }
+    }
+}

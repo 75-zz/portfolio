@@ -1,1 +1,10 @@
 @charset "UTF-8";
+.p-footer{
+    background-color: $primary;
+    display: flex;
+    .ft-copy{
+        margin: 0 auto;
+        align-self:center;
+        color: #fff;
+    }
+}

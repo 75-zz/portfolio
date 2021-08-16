@@ -1,1 +1,53 @@
 @charset "UTF-8";
+.p-about {
+    width: 80%;
+    height: 542px;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.7);
+    background-image: url(/img/about-bg.png);
+    background-position: left bottom;
+    mix-blend-mode: darken;
+    margin: 132px auto 132px 0px;
+    padding: 108px 160px;
+    display: flex;
+    justify-content: space-between;
+    .p-ab_info {
+        width: 60%;
+        p {
+            margin-top: 20px;
+        }
+    }
+    .p-ab_fig {
+        width: 40%;
+        .p-ab-pic {
+            margin: 0 auto;
+            width: 317px;
+            height: 317px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $secondary;
+            border-radius: 10px;
+            img {
+                width: 250px;
+                height: 250px;
+                border-radius: 10px;
+            }
+        }
+        .p-ab_caption {
+            position: relative;
+            margin: 20px auto;
+            width: 100%;
+            p {
+                text-align: center;
+            }
+            p::before {
+                content: "きくち なごみ";
+                font-size: 10px;
+                position: absolute;
+                top: -14px;
+                left: 225px;
+            }
+        }
+    }
+}
