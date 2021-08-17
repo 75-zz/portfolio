@@ -1,7 +1,13 @@
 @charset "UTF-8";
 .p-results {
-    .p-rs_slider{
-    display: flex;
-    justify-content: space-around;
-}
+    width: 100%;
+    margin-bottom: 150px;
+    padding-bottom: 100px;
+    display: block;
+    .p-rs_slider {
+        display: flex;
+        justify-content: space-around;
+        margin: 50px 0;
+    }
+
 }
