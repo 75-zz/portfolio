@@ -6,22 +6,9 @@
     background-size: cover;
     width: 100vw;
     height: 100vh;
+    min-height: 960px;
     position: relative;
-    .p-nav_container {
-        top: -10px;
-        right: 130px;
-        position: fixed;
-        display: flex;
-        justify-content: flex-end;
-        .p-nav {
-            display: block;
-            width: 130px;
-            height: 115px;
-            border-radius: 10px;
-            background-color: rgba($color: #003366, $alpha: 0.4);
-            color: #fff;
-        }
-    }
+    
     .p-hd_wrapper {
         display: flex;
         height: 100%;
@@ -54,6 +41,7 @@
         top: 0px;
         left: 166px;
         height: 100%;
+        min-height: 960px;
         padding: 21px;
         h2 {
             color: #fff;

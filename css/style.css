@@ -487,7 +487,6 @@ a {
   filter: drop-shadow(1px 1px 1px #666);
   justify-content: space-between;
   margin: 132px auto 132px 0px;
-  mix-blend-mode: darken;
   padding: 108px 160px 78px;
   width: 80%;
 }
@@ -556,23 +555,9 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  min-height: 960px;
   position: relative;
   width: 100vw;
-}
-.p-header .p-nav_container {
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  right: 130px;
-  top: -10px;
-}
-.p-header .p-nav_container .p-nav {
-  background-color: rgba(0, 51, 102, 0.4);
-  border-radius: 10px;
-  color: #fff;
-  display: block;
-  height: 115px;
-  width: 130px;
 }
 .p-header .p-hd_wrapper {
   align-items: center;
@@ -602,6 +587,7 @@ a {
   background-color: #003366;
   height: 100%;
   left: 166px;
+  min-height: 960px;
   mix-blend-mode: overlay;
   padding: 21px;
   position: absolute;
@@ -642,6 +628,23 @@ a {
   opacity: 0.5;
 }
 
+.p-nav_container {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  right: 130px;
+  top: -10px;
+  z-index: 100;
+}
+.p-nav_container .p-nav {
+  background-color: rgba(0, 51, 102, 0.4);
+  border-radius: 10px;
+  color: #fff;
+  display: block;
+  height: 115px;
+  width: 130px;
+}
+
 .p-results {
   display: block;
   margin-bottom: 150px;
@@ -658,6 +661,7 @@ a {
   background-color: #72a0c1;
   margin-bottom: 300px;
   padding: 72px 160px;
+  z-index: -1;
 }
 .p-skills .p-sk_wrapper {
   display: flex;

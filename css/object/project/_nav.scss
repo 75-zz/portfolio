@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.p-nav_container {
+    top: -10px;
+    right: 130px;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 100;
+    .p-nav {
+        display: block;
+        width: 130px;
+        height: 115px;
+        border-radius: 10px;
+        background-color: rgba($color: #003366, $alpha: 0.4);
+        color: #fff;
+    }
+}
