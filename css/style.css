@@ -550,28 +550,44 @@ a {
 }
 
 .p-header {
-  background-image: url(/img/header-bg.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   min-height: 960px;
   position: relative;
+  /*nd-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;*/
+  width: 100vw;
+}
+.p-header .header-pattern {
+  background: repeating-linear-gradient(0deg, transparent, transparent 2px, #999 2px, #999 3px);
+  background-size: auto auto;
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+}
+.p-header video {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
   width: 100vw;
 }
 .p-header .p-hd_wrapper {
   align-items: center;
   display: flex;
-  height: 100%;
   justify-content: center;
-  width: 100%;
 }
 .p-header .p-hd_wrapper .p-logo {
-  align-items: center;
-  display: flex;
   height: 334px;
-  justify-content: center;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-72px);
+  transform: translateY(-167px);
   width: 145px;
+  z-index: 2;
 }
 .p-header .p-hd_wrapper .p-logo img {
   display: block;
@@ -583,7 +599,7 @@ a {
 .p-header .p-hd_wrapper .p-logo img:hover {
   filter: drop-shadow(0px 5px 15px white) brightness(4);
 }
-.p-header .p-hd_title {
+.p-header .p-hd_wrapper .p-hd_title {
   background-color: #003366;
   height: 100%;
   left: 166px;
@@ -593,7 +609,7 @@ a {
   position: absolute;
   top: 0px;
 }
-.p-header .p-hd_title h2 {
+.p-header .p-hd_wrapper .p-hd_title h2 {
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-rl;
   color: #fff;
@@ -606,8 +622,7 @@ a {
   -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
 }
-
-.p-hd_results {
+.p-header .p-hd_wrapper .p-hd_results {
   background-color: rgba(0, 0, 0, 0.5);
   bottom: 70px;
   display: flex;
@@ -617,34 +632,96 @@ a {
   position: absolute;
   width: 100%;
 }
-.p-hd_results img {
+.p-header .p-hd_wrapper .p-hd_results a {
   border-radius: 10px;
   height: 150px;
   margin: 0 10px;
-  transition: all 0.3s;
+  overflow: hidden;
+  position: relative;
   width: 150px;
 }
-.p-hd_results img:hover {
-  opacity: 0.5;
+.p-header .p-hd_wrapper .p-hd_results a span {
+  background-color: #003366;
+  color: #fff;
+  display: none;
+  font-size: 12px;
+  opacity: 0.7;
+  position: absolute;
+  text-align: center;
+  top: 33%;
+  width: 100%;
+  z-index: 2;
+}
+.p-header .p-hd_wrapper .p-hd_results a:hover span {
+  display: block;
+}
+.p-header .p-hd_wrapper .p-hd_results a:hover img {
+  filter: saturate(1) contrast(100%);
+  transform: scale(1.3, 1.3) rotate(20deg);
+}
+.p-header .p-hd_wrapper .p-hd_results img {
+  filter: saturate(0) contrast(250%);
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s;
+  width: 150px;
 }
 
 .p-nav_container {
-  display: flex;
-  justify-content: flex-end;
   position: fixed;
-  right: 130px;
-  top: -10px;
+  right: 0;
+  top: 0;
   z-index: 100;
 }
 .p-nav_container .p-nav {
-  background-color: rgba(0, 51, 102, 0.4);
-  border-radius: 10px;
+  background-color: rgba(0, 51, 102, 0.5);
+  border-radius: 0 0 0 10px;
+  width: 40vw;
+}
+.p-nav_container .p-nav ul {
+  display: flex;
+  justify-content: center;
+}
+.p-nav_container .p-nav ul li {
   color: #fff;
-  display: block;
-  height: 115px;
-  width: 130px;
+  font-size: 14px;
+  margin: 0 18px;
+  padding: 14px 0;
+  position: relative;
+}
+.p-nav_container .p-nav ul li::after {
+  background-color: #fff;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 34px;
+  transition: all 0.3s;
+  width: 0;
+}
+.p-nav_container .p-nav ul li:hover::after {
+  width: 100%;
 }
 
+/*
+.p-nav_container {
+    top: 0;
+    right: 130px;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 100;
+    .p-nav {
+        display: block;
+        width: 130px;
+        height: 115px;
+        border-radius: 0 0 10px 10px;
+        background-color: rgba($color: #003366, $alpha: 0.4);
+        color: #fff;
+    }
+}
+*/
 .p-results {
   display: block;
   margin-bottom: 150px;
@@ -741,7 +818,7 @@ a {
 }
 .p-solution .p-sl_wrapper {
   background-color: #003366;
-  border-radius: 10px;
+  border-radius: 10px 0 0 10px;
   bottom: 0;
   height: 220px;
   position: absolute;
