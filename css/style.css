@@ -316,6 +316,10 @@ html, body {
   font-family: "Cantarell", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 li {
   list-style: none;
 }
@@ -533,10 +537,79 @@ a {
 }
 
 .p-contact {
-  background-image: url(/img/contact-bg.png);
-  background-position: center bottom;
-  background-size: cover;
+  background: url(/img/contact-bg.png) no-repeat center bottom/cover;
+  filter: sepia(90%);
   width: 100%;
+}
+.p-contact .p-contact_form {
+  margin: 120px auto 0;
+  width: 60%;
+  /* テキストフィールドとメールアドレスフィールド */
+  /* メッセージ（テキストエリア） */
+  /* ラジオボタンとチェックボックス */
+  /* 送信ボタン */
+}
+.p-contact .p-contact_form .apply-title {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0 0 60px 0;
+  text-align: center;
+}
+.p-contact .p-contact_form .apply-title span {
+  font-family: "Croissant One", cursive;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+.p-contact .p-contact_form .apply-lead {
+  line-height: 1.9;
+  margin: 0;
+}
+.p-contact .p-contact_form input,
+.p-contact .p-contact_form textarea,
+.p-contact .p-contact_form label {
+  font-size: 16px;
+}
+.p-contact .p-contact_form .form p {
+  line-height: 1.9;
+  margin: 0 0 30px 0;
+}
+.p-contact .p-contact_form .required {
+  color: #73cbd6;
+  font-size: 0.875rem;
+  margin-left: 10px;
+}
+.p-contact .p-contact_form input[type=text],
+.p-contact .p-contact_form input[type=email] {
+  background-color: #fff;
+  border: 1px solid #747474;
+  padding: 10px;
+  width: 100%;
+}
+.p-contact .p-contact_form textarea {
+  background-color: #fff;
+  border: 1px solid #747474;
+  height: 6rem;
+  line-height: 1.5;
+  padding: 10px;
+  width: 100%;
+}
+.p-contact .p-contact_form input[type=radio],
+.p-contact .p-contact_form input[type=checkbox] {
+  margin-right: 10px;
+}
+.p-contact .p-contact_form .form-button {
+  margin-bottom: 0;
+  text-align: center;
+}
+.p-contact .p-contact_form input[type=submit] {
+  background-color: #000;
+  border: none;
+  border-radius: 40px;
+  color: #fff;
+  padding: 20px 30px;
+}
+.p-contact .p-contact_form input[type=submit]:hover {
+  opacity: 0.5;
 }
 
 .p-footer {
@@ -685,7 +758,7 @@ a {
 }
 .p-nav_container .p-nav ul li {
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
   margin: 0 18px;
   padding: 14px 0;
   position: relative;
@@ -730,8 +803,51 @@ a {
 }
 .p-results .p-rs_slider {
   display: flex;
-  justify-content: space-around;
-  margin: 50px 0;
+  margin: 50px auto;
+  padding: 50px 200px;
+  width: 80%;
+}
+.p-results .p-rs_slider a {
+  position: relative;
+}
+.p-results .p-rs_slider a p {
+  color: #003366;
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: -100px;
+  transition: all 0.5s ease-out;
+  width: 100%;
+}
+.p-results .p-rs_slider a:hover p {
+  top: -15px;
+}
+.p-results .p-rs_slider img {
+  filter: drop-shadow(0 2px 2px #999);
+  height: 250px;
+  padding: 60px 15px;
+  transition: all 0.5s ease-out;
+  width: 250px;
+}
+.p-results .p-rs_slider img:hover {
+  filter: drop-shadow(0 20px 16px #333);
+  transform: translateY(-5px) scale(1.02);
+}
+
+.swiper-parent {
+  position: relative;
+  /* 前・次スライドボタンの縦位置調整（スライドの高さの中央に合わせる） */
+}
+.swiper-parent .swiper-container {
+  /* ★ページネーション・スクロールバー分の余白50pxを下に取る */
+  box-sizing: content-box;
+  padding-bottom: 50px;
+}
+.swiper-parent .swiper-button-prev, .swiper-parent .swiper-button-next {
+  /* ☆★ページネーション・スクロールバー（50px）を除く縦位置の中央（＝スライドの高さの中央）に一旦配置 */
+  margin-top: -22px;
+  top: calc((100% - 50px) * 0.5);
+  /* ★ボタンの高さ（44px）の半分のネガティブマージンで上に少しずらす */
 }
 
 .p-skills {

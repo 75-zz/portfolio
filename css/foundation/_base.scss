@@ -12,6 +12,9 @@ $sp: 375px; // スマホ
 html,body{
   font-family: 'Cantarell', sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 li {
   list-style: none;
 }
