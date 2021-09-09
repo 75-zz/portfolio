@@ -1,15 +1,15 @@
 @charset "UTF-8";
 .p-solution {
-    width: 90%;
     height: 445px;
-    margin: 122px 0 190px auto;
+    margin: 180px 0 190px auto;
     position: relative;
     .p-sl_cardarea{
         display: flex;
         justify-content: center;
     }
     .p-sl_wrapper {
-        width: 100%;
+        width: 90%;
+        margin-left:10%;
         height: 220px;
         background-color: $primary;
         border-radius: 10px 0 0 10px;

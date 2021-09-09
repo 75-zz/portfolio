@@ -341,7 +341,6 @@ a {
 }
 
 .l-contact {
-  height: 1085px;
   width: 100vw;
 }
 
@@ -360,11 +359,6 @@ a {
 }
 
 .l-skills {
-  width: 100vw;
-}
-
-.l-solution {
-  height: 445px;
   width: 100vw;
 }
 
@@ -537,55 +531,65 @@ a {
 }
 
 .p-contact {
-  background: url(/img/contact-bg.png) no-repeat center bottom/cover;
-  filter: sepia(90%);
+  margin: 0;
   width: 100%;
 }
 .p-contact .p-contact_form {
-  margin: 120px auto 0;
-  width: 60%;
+  background-attachment: fixed;
+  background-image: url(/img/contact-bg.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  margin: 20px auto 0;
+  width: 100%;
+}
+.p-contact .p-contact_form .form-container {
+  margin: 0 auto;
+  padding: 100px 0;
+  width: 40%;
   /* テキストフィールドとメールアドレスフィールド */
   /* メッセージ（テキストエリア） */
   /* ラジオボタンとチェックボックス */
   /* 送信ボタン */
 }
-.p-contact .p-contact_form .apply-title {
+.p-contact .p-contact_form .form-container .apply-title {
   font-size: 1.25rem;
   line-height: 1.5;
   margin: 0 0 60px 0;
   text-align: center;
 }
-.p-contact .p-contact_form .apply-title span {
+.p-contact .p-contact_form .form-container .apply-title span {
   font-family: "Croissant One", cursive;
   font-size: 1.875rem;
   font-weight: 400;
 }
-.p-contact .p-contact_form .apply-lead {
+.p-contact .p-contact_form .form-container .apply-lead {
   line-height: 1.9;
   margin: 0;
 }
-.p-contact .p-contact_form input,
-.p-contact .p-contact_form textarea,
-.p-contact .p-contact_form label {
+.p-contact .p-contact_form .form-container input,
+.p-contact .p-contact_form .form-container textarea,
+.p-contact .p-contact_form .form-container label {
   font-size: 16px;
 }
-.p-contact .p-contact_form .form p {
+.p-contact .p-contact_form .form-container .form p {
   line-height: 1.9;
   margin: 0 0 30px 0;
 }
-.p-contact .p-contact_form .required {
+.p-contact .p-contact_form .form-container .required {
   color: #73cbd6;
   font-size: 0.875rem;
   margin-left: 10px;
 }
-.p-contact .p-contact_form input[type=text],
-.p-contact .p-contact_form input[type=email] {
+.p-contact .p-contact_form .form-container input[type=text],
+.p-contact .p-contact_form .form-container input[type=email] {
   background-color: #fff;
   border: 1px solid #747474;
   padding: 10px;
   width: 100%;
 }
-.p-contact .p-contact_form textarea {
+.p-contact .p-contact_form .form-container textarea {
   background-color: #fff;
   border: 1px solid #747474;
   height: 6rem;
@@ -593,22 +597,22 @@ a {
   padding: 10px;
   width: 100%;
 }
-.p-contact .p-contact_form input[type=radio],
-.p-contact .p-contact_form input[type=checkbox] {
+.p-contact .p-contact_form .form-container input[type=radio],
+.p-contact .p-contact_form .form-container input[type=checkbox] {
   margin-right: 10px;
 }
-.p-contact .p-contact_form .form-button {
+.p-contact .p-contact_form .form-container .form-button {
   margin-bottom: 0;
   text-align: center;
 }
-.p-contact .p-contact_form input[type=submit] {
+.p-contact .p-contact_form .form-container input[type=submit] {
   background-color: #000;
   border: none;
   border-radius: 40px;
   color: #fff;
   padding: 20px 30px;
 }
-.p-contact .p-contact_form input[type=submit]:hover {
+.p-contact .p-contact_form .form-container input[type=submit]:hover {
   opacity: 0.5;
 }
 
@@ -794,10 +798,10 @@ a {
 }
 .p-header .p-hd_wrapper .p-hd_results a {
   border-radius: 10px;
-  height: 150px;
+  height: 140px;
   overflow: hidden;
   position: relative;
-  width: 150px;
+  width: 140px;
 }
 .p-header .p-hd_wrapper .p-hd_results a span {
   background-color: #003366;
@@ -949,6 +953,10 @@ a {
   width: 150px;
 }
 
+.p-main {
+  overflow: hidden;
+}
+
 .p-nav_container {
   position: fixed;
   right: 0;
@@ -1077,9 +1085,8 @@ a {
 
 .p-solution {
   height: 445px;
-  margin: 122px 0 190px auto;
+  margin: 180px 0 190px auto;
   position: relative;
-  width: 90%;
 }
 .p-solution .p-sl_cardarea {
   display: flex;
@@ -1090,8 +1097,9 @@ a {
   border-radius: 10px 0 0 10px;
   bottom: 0;
   height: 220px;
+  margin-left: 10%;
   position: absolute;
-  width: 100%;
+  width: 90%;
   z-index: -1;
 }
 
