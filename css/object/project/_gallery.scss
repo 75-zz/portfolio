@@ -59,7 +59,7 @@
             p{
              position: absolute;
              transition: all 0.5s ease-out;
-             top:-100px;
+             top:-10%;
              width: 100%;
              text-align: center;
              display: block;
@@ -76,6 +76,7 @@
             filter: drop-shadow(0 2px 2px #999);
             transition: all 0.5s ease-out;
             padding: 15px 10px;
+            border-radius: 25px;
         }
         img:hover {
             filter: drop-shadow(0 20px 16px #333);
@@ -83,11 +84,10 @@
         }      
 }
   
-  /*画像の横幅を100%にしてレスポンシブ化*/
   .grid img{
     width:100%;
     height:auto;
-    vertical-align: bottom;/*画像の下にできる余白を削除*/
+    vertical-align: bottom;
   }
   
   /*横幅が768px以下になった際の指定*/

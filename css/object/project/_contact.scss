@@ -68,7 +68,7 @@
          }
          /* 送信ボタン */
          .form-button {
-            margin-bottom: 0;
+            margin: 0 auto;
             text-align: center;
          }
          input[type="submit"] {
@@ -83,4 +83,8 @@
          }
       }
    }
+}
+.submit-button{
+   width: 100%;
+   text-align: center;
 }
