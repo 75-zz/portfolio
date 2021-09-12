@@ -59,7 +59,7 @@
             p{
              position: absolute;
              transition: all 0.5s ease-out;
-             top:-10%;
+             top:-20%;
              width: 100%;
              text-align: center;
              display: block;
@@ -70,13 +70,14 @@
         z-index:10;
         background-color: $primary;
         color: #fff;
-        padding: 10px 0;
     }
         img {
             filter: drop-shadow(0 2px 2px #999);
             transition: all 0.5s ease-out;
             padding: 15px 10px;
             border-radius: 25px;
+            overflow: hidden;
+
         }
         img:hover {
             filter: drop-shadow(0 20px 16px #333);
