@@ -1,0 +1,37 @@
+@use "../../foundation/base";
+
+
+.c-sec_title{
+    position: relative;
+    font-size: 24px;
+    display: block;
+    text-align: center;
+    @include base.sp {
+        width: 100%;
+    };
+    span,.center1{
+        position: absolute;
+        top: -24px;
+        left: 48.5%;
+        transform: translate(0, -50%);
+        font-size: 14px;
+        border-bottom:1px #000 solid;
+        display: block;
+        @include base.sp {
+            left: 30%;
+        };
+    }
+    span,.center2{
+        position: absolute;
+        top: -24px;
+        left: 48.5%;
+        transform: translate(0, -50%);
+        font-size: 14px;
+        border-bottom:1px #000 solid;
+        display: block;
+        @include base.sp {
+            left: 43%;
+        };
+    }
+
+}

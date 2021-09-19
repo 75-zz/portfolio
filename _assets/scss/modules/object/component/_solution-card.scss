@@ -1,0 +1,22 @@
+@use "../../foundation/base";
+
+.c-sl_card {
+    margin-top: 70px;
+    width: 260px;
+    height: 290px;
+    margin: 0 30px;
+    @include base.sp {
+        margin: 30px auto;
+    }
+    img {
+        width: 252px;
+        height: 160px;
+        object-fit: contain;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    p{
+        color: #fff;
+        margin-top: 10px;
+    }
+}

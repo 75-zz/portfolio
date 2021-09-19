@@ -1,0 +1,16 @@
+@use "../../foundation/base";
+
+
+.p-footer{
+    background-color: base.$primary;
+    display: flex;
+    text-align: center;
+    .ft-copy{
+        margin: 0 auto;
+        align-self:center;
+        color: #fff;
+        @include base.sp {
+           font-size: 10px;
+         }
+    }
+}

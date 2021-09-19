@@ -1,0 +1,92 @@
+@use "../../foundation/base";
+
+.p-skills {
+    background-color: base.$secondary;
+    padding: 72px 160px;
+    margin: 160px auto;
+    z-index: -1;
+    @include base.sp {
+        padding: 72px 20px;
+    }
+    .p-sk_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include base.sp {
+            flex-direction: column;
+        }
+        .p-sk_big {
+            display: flex;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 26px;
+            margin: 48px 0;
+            filter: drop-shadow(1px 1px 1px #666);
+            @include base.sp {
+                flex-direction: column;
+                margin-bottom: 0;
+            }
+            table {
+                width: 60%;
+                padding-bottom: 10px;
+                @include base.sp {
+                    width: 100%;
+                }
+                caption {
+                    font-size: 34px;
+                    font-weight: bold;
+                    border-bottom: 1px solid #000;
+                    margin-left: -26px;
+                    padding-bottom: 20px;
+                    @include base.sp {
+                        margin-left:0;
+                    }
+                }
+                td {
+                    padding: 20px 0;
+                }
+                td:first-child {
+                    text-align: center;
+                    font-weight: bold;
+                    padding-right: 20px;
+                }
+            }
+        }
+        .p-sk_small {
+            display: flex;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: rgba(#000000, 0.2);
+            padding: 26px 26px 0;
+            width: 48%;
+            flex-direction: column;
+            filter: drop-shadow(1px 1px 1px #666);
+            @include base.sp {
+                width:100%;
+                margin-top: 20px;
+            }
+            table {
+                width: 80%;
+                margin: 0 auto;
+                caption {
+                    font-size: 34px;
+                    font-weight: bold;
+                    border-bottom: 1px solid #000;
+                    width: 134%;
+                    margin-left: -17%;
+                    text-align: center;
+                    padding-bottom: 20px;
+                }
+                td {
+                    padding-top: 40px;
+                }
+                td:first-child {
+                    text-align: center;
+                    font-weight: bold;
+                    padding-right: 20px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}

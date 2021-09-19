@@ -1,0 +1,57 @@
+@use "../../foundation/base";
+
+.p-nav_container {
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 100;
+    @include base.sp {
+        top:95%;
+    };
+    .p-nav {
+        width: 40vw;
+        border-radius: 0 0 0 10px;
+        background-color: rgba( #003366,  0.5);
+        @include base.sp {
+            width: 100vw;
+            border-radius: 0 ;
+        };
+        ul {
+            display: flex;
+            justify-content: center;
+            @include base.sp {
+                justify-content: space-around;
+            };
+            li p{
+                padding: 14px 0;
+                color: #fff;
+                font-size: 13px;
+                margin: 0 18px;
+                position: relative;
+                @include base.sp {
+                    display: none;
+                };
+            }
+            li i{
+                display: none;
+                @include base.sp {
+                    display: block;
+                    margin: 13px 0;
+                };
+            }
+            li p::after{
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 1px;
+                top:34px;
+                left: 0;
+                background-color: #fff;
+                transition: all 0.3s;
+            }
+            li p:hover::after{
+                width: 100%;
+            }
+        }
+    }
+}

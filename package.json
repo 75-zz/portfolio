@@ -28,10 +28,11 @@
     "gulp-sourcemaps": "^3.0.0"
   },
   "dependencies": {
-    "browser-sync": "^2.27.4",
+    "browser-sync": "^2.27.5",
     "css-declaration-sorter": "^6.1.1",
+    "gulp-dart-sass": "^1.0.2",
     "gulp-notify": "^4.0.0",
     "gulp-postcss": "^9.0.0",
-    "sass": "^1.36.0"
+    "sass": "^1.39.2"
   }
 }

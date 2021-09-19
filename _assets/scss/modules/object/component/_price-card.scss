@@ -1,0 +1,43 @@
+@use "../../foundation/base";
+
+.c-price-card {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 60px auto;
+    padding: 40px 35px;
+    border-radius: 10px;
+    background-color: #fff;
+    filter: drop-shadow(0 1px 1.5px #aaa);
+    @include base.sp {
+        width: 90%;
+        flex-direction: column;
+        margin: 40px auto;
+        padding: 30px;
+    }
+    img {
+        width: 80px;
+        object-fit: contain;
+        @include base.sp {
+            margin: 0 auto;
+        }
+    }
+    .c-price-textarea {
+        width: 70%;
+        text-align: center;
+        @include base.sp {
+            width: 100%;
+        }
+        .c-price-card-ttl {
+            font-size: 1.5rem;
+            border-bottom: 1px solid #333;
+        }
+        .c-price-card-text {
+            font-size: 1.1rem;
+        }
+    }
+    .c-price-textarea > * {
+        padding: 10px 10px 0px;
+        color: #333;
+    }
+}

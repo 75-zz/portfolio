@@ -1,0 +1,84 @@
+@use "../../foundation/base";
+
+.p-about {
+    width: 80%;
+    border-radius: 10px;
+    background-color: rgba(250, 250, 250, 0.45);
+    background-image: url(/img/about-bg.png);
+    background-position: left bottom;
+    padding: 108px 160px 78px;
+    margin: 130px 0;
+    display: flex;
+    justify-content: space-between;
+    filter: drop-shadow(1px 1px 1px #666);
+    @include base.sp {
+        width: 100%;
+        border-radius: 0;
+        padding: 50px 40px;
+        margin: 0 0 116px 0;
+        flex-direction: column;
+    }
+    .p-ab_info {
+        width: 60%;
+        @include base.sp {
+            width: 100%;
+        }
+        p {
+            margin-top: 30px;
+            padding: 0 40px;
+            line-height: 2;
+            @include base.sp {
+                padding: 0;
+                margin: 20px 0;
+            }
+        }
+    }
+    .p-ab_fig {
+        width: 40%;
+        @include base.sp {
+            width: 100%;
+        }
+        .p-ab-pic {
+            margin: 0 auto;
+            width: 317px;
+            height: 317px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: base.$secondary;
+            border-radius: 10px;
+            @include base.sp {
+                width: 237px;
+                height: 237px;
+            }
+            img {
+                width: 250px;
+                height: 250px;
+                border-radius: 10px;
+                @include base.sp {
+                    width: 186px;
+                    height: 186px;
+                }
+            }
+        }
+        .p-ab_caption {
+            position: relative;
+            margin: 20px auto;
+            width: 100%;
+            p {
+                text-align: center;
+            }
+            p::before {
+                content: "きくち なごみ";
+                font-size: 10px;
+                position: absolute;
+                top: -14px;
+                left: 225px;
+                @include base.sp {
+                    top: -14px;
+                    left: 130px;
+                }
+            }
+        }
+    }
+}

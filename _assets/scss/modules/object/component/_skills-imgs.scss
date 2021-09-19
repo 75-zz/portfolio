@@ -1,0 +1,35 @@
+@use "../../foundation/base";
+
+.c-sk_imgs {
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    @include base.sp {
+        padding: 20px;
+        width: 100%;
+    }
+}
+.c-sk_small_imgs {
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    @include base.sp {
+        padding: 20px;
+    }
+
+}
+.c-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    img {
+        object-fit: contain;
+        margin: 20px 15px;
+    }
+}
